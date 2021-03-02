@@ -1,9 +1,4 @@
-import React, {
-  useState,
-  useRef,
-  useImperativeHandle,
-  forwardRef
-} from "react";
+import { useState, useRef, useImperativeHandle, forwardRef } from "react";
 
 const ElaborateInput = forwardRef(
   ({ hasError, placeholder, value, update }, ref) => {
@@ -19,7 +14,7 @@ const ElaborateInput = forwardRef(
       <input
         ref={inputRef}
         value={value}
-        onChange={e => update(e.target.value)}
+        onChange={(e) => update(e.target.value)}
         placeholder={placeholder}
         style={{
           padding: "5px 15px",

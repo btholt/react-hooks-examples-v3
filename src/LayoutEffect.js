@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect, useRef } from "react";
+import { useState, useLayoutEffect, useRef } from "react";
 
 const LayoutEffectComponent = () => {
   const [width, setWidth] = useState(0);

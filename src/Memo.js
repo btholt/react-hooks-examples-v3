@@ -1,6 +1,6 @@
-import React, { useState, useMemo } from "react";
+import { useState, useMemo } from "react";
 
-const fibonacci = n => {
+const fibonacci = (n) => {
   if (n <= 1) {
     return 1;
   }

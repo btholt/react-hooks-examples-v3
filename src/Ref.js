@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 
 const RefComponent = () => {
   const [stateNumber, setStateNumber] = useState(0);

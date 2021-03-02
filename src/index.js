@@ -1,4 +1,3 @@
-import React from "react";
 import ReactDOM from "react-dom";
 import State from "./State";
 import Effect from "./Effect";
@@ -9,6 +8,7 @@ import Memo from "./Memo";
 import Callback from "./Callback";
 import LayoutEffect from "./LayoutEffect";
 import ImperativeHandle from "./ImperativeHandle";
+import DebugValue from "./DebugValue";
 
 import "./styles.css";
 
@@ -32,6 +32,8 @@ function App() {
       <LayoutEffect />
       <hr />
       <ImperativeHandle />
+      <hr />
+      <DebugValue />
     </div>
   );
 }

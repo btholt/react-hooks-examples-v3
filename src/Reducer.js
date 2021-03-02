@@ -1,7 +1,7 @@
-import React, { useReducer } from "react";
+import { useReducer } from "react";
 
 // fancy logic to make sure the number is between 0 and 255
-const limitRGB = num => (num < 0 ? 0 : num > 255 ? 255 : num);
+const limitRGB = (num) => (num < 0 ? 0 : num > 255 ? 255 : num);
 
 const step = 50;
 

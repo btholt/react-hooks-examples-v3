@@ -1,4 +1,4 @@
-import React, { useState, useContext, createContext } from "react";
+import { useState, useContext, createContext } from "react";
 
 const UserContext = createContext([
   {
@@ -7,7 +7,7 @@ const UserContext = createContext([
     suffix: 1,
     email: "bobbobberson@example.com"
   },
-  obj => obj
+  (obj) => obj
 ]);
 
 const LevelFive = () => {

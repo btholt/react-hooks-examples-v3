@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, memo } from "react";
+import { useState, useEffect, useCallback, memo } from "react";
 
 const ExpensiveComputationComponent = memo(({ compute, count }) => {
   return (
@@ -13,11 +13,11 @@ const CallbackComponent = () => {
   const [time, setTime] = useState(new Date());
   const [count, setCount] = useState(1);
   useEffect(() => {
-    const timer = setTimeout(setTime(new Date()), 1000);
+    const timer = setTimeout(() => setTime(new Date()), 1000);
     return () => clearTimeout(timer);
   });
 
-  const fibonacci = n => {
+  const fibonacci = (n) => {
     if (n <= 1) {
       return 1;
     }

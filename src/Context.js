@@ -7,7 +7,7 @@ const UserContext = createContext([
     suffix: 1,
     email: "bobbobberson@example.com"
   },
-  (obj) => obj
+  (obj) => obj //the reason putting this is to make typed with typescript easier
 ]);
 
 const LevelFive = () => {
@@ -49,13 +49,15 @@ const LevelTwo = () => (
 );
 
 const ContextComponent = () => {
-  const userState = useState({
-    firstName: "James",
-    lastName: "Jameson",
-    suffix: 1,
-    email: "jamesjameson@example.com"
-  });
+  // const userState = useState({
+  //   firstName: "James",
+  //   lastName: "Jameson",
+  //   suffix: 1,
+  //   email: "jamesjameson@example.com"
+  // });
 
+  const userState = useContext(UserContext);
+  //take with hook
   return (
     <UserContext.Provider value={userState}>
       <h1>first level</h1>
